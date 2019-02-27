@@ -1,0 +1,187 @@
+*,
+html,
+body {
+  margin: 0;
+  padding: 0; }
+
+body {
+  height: 5000px;
+  background-color: red; }
+
+header {
+  background-color: #333333;
+  position: fixed;
+  width: 100vw;
+  height: 50px;
+  margin-top: 0px; }
+  header nav {
+    display: flex;
+    height: 50px;
+    justify-content: center;
+    align-items: center;
+    width: 100vw; }
+    header nav button {
+      display: none; }
+  header a {
+    text-decoration: none;
+    color: white;
+    margin-right: 3%;
+    text-transform: uppercase;
+    font-size: 16px; }
+
+.drop-menu {
+  background-color: white;
+  width: 200px;
+  height: 200px;
+  position: relative;
+  display: none; }
+
+main {
+  padding-top: 50px;
+  text-align: center; }
+
+.representation {
+  color: white;
+  background-image: url("../images/background.jpg");
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center; }
+
+.my-name {
+  font-size: 80px;
+  text-transform: uppercase; }
+
+.icons {
+  border-top: 2px solid white;
+  margin-top: 50px; }
+
+.fab {
+  color: white;
+  width: 50px;
+  height: 50px;
+  margin-right: 20px;
+  margin-top: 50px; }
+
+.about-me {
+  display: flex;
+  flex-direction: row;
+  background-color: #2B2B2B; }
+  .about-me h1 {
+    color: white;
+    font-size: 25px; }
+  .about-me p {
+    color: #7A7A7A; }
+  .about-me .photo {
+    width: 30%; }
+  .about-me .information {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    text-align: left; }
+    .about-me .information .about {
+      margin: 50px 0px 50px 0px; }
+    .about-me .information .contact {
+      display: flex;
+      flex-direction: row;
+      text-align: left;
+      margin-bottom: 50px; }
+      .about-me .information .contact .details {
+        width: 20%; }
+      .about-me .information .contact .resume {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%; }
+        .about-me .information .contact .resume button {
+          width: 200px; }
+
+@media screen and (max-width: 992px) {
+  .my-name {
+    font-size: 60px; } }
+
+@media screen and (max-width: 425px) {
+  .my-name {
+    font-size: 50px; } }
+
+@media screen and (max-width: 355px) {
+  .my-name {
+    font-size: 40px; } }
+
+@media screen and (max-width: 992px) {
+  .representation p {
+    padding: 0px 10px;
+    font-size: 14px; } }
+
+@media screen and (max-width: 768px) {
+  header nav a {
+    display: none; } }
+
+@media screen and (max-width: 768px) {
+  header {
+    display: flex;
+    justify-content: flex-end; } }
+
+@media screen and (max-width: 768px) {
+  header .drop-menu {
+    position: absolute;
+    top: 50px;
+    border: 2px solid #858585;
+    box-sizing: border-box; } }
+
+header .drop-menu ul {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  height: 100%;
+  background-color: #1F2024; }
+  header .drop-menu ul li {
+    list-style-type: none;
+    border-bottom: 1px solid #858585; }
+    header .drop-menu ul li a {
+      color: white; }
+
+@media screen and (max-width: 768px) {
+  header nav {
+    justify-content: flex-end; } }
+
+@media screen and (max-width: 768px) {
+  header nav button {
+    display: block;
+    color: white;
+    background-color: #333333;
+    border: none;
+    margin-right: 5%; } }
+
+@media screen and (max-width: 768px) {
+  .about-me {
+    flex-direction: column; } }
+
+@media screen and (max-width: 768px) {
+  .about-me p {
+    text-align: center; } }
+
+@media screen and (max-width: 768px) {
+  .about-me h1 {
+    text-align: center; } }
+
+@media screen and (max-width: 768px) {
+  .about {
+    width: 100vw;
+    padding-left: 20px;
+    padding-right: 20px; } }
+
+@media screen and (max-width: 768px) {
+  .contact {
+    width: 100vw;
+    flex-direction: column !important; } }
+
+@media screen and (max-width: 768px) {
+  .details {
+    width: 100vw !important; } }
+
+@media screen and (max-width: 425px) {
+  .resume button {
+    width: 100vw !important; } }
