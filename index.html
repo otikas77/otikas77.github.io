@@ -12,11 +12,10 @@
 <body>
   <header>
     <nav>
-      <a href="#">home</a>
-      <a href="#">about</a>
-      <a href="#">resume</a>
-      <a href="#">works</a>
-      <a href="#">contact</a>
+      <a href="javascript://" class="scroll toTop" data-scroll="0">home</a>
+      <a href="javascript://" class="scroll" data-scroll="first">about</a>
+      <a href="javascript://" class="scroll" data-scroll="1190">resume</a>
+      <a href="javascript://" class="scroll" data-scroll="3160">works</a>
       <button type="button" name="button" class="menuButton"><i class="fas fa-align-justify fa-2x"></i></button>
     </nav>
     <div class="drop-menu">
@@ -25,7 +24,6 @@
         <li><a href="#">about</a></li>
         <li><a href="#">resume</a></li>
         <li><a href="#">works</a></li>
-        <li><a href="#">contact</a></li>
       </ul>
     </div>
   </header>
@@ -34,13 +32,13 @@
       <h1 class="my-name">i`m anatoly bayda</h1>
       <p>I`m young Front-end developer which is looking for a job. Let's start scrolling and learn more about me.</p>
       <div class="icons">
-        <a href="#"><i class="fab fa-github fa-2x"></i></a>
-        <a href="#"><i class="fab fa-linkedin fa-2x"></i></a>
-        <a href="#"><i class="fab fa-facebook-f fa-2x"></i></a>
-        <a href="#"><i class="fab fa-instagram fa-2x"></i></a>
+        <a href="https://github.com/otikas77"><i class="fab fa-github fa-2x"></i></a>
+        <a href="https://www.linkedin.com/in/anatoliy-bayda-051190174/"><i class="fab fa-linkedin fa-2x"></i></a>
+        <a href="https://www.facebook.com/profile.php?id=100010775678196&ref=bookmarks"><i class="fab fa-facebook-f fa-2x"></i></a>
+        <a href="https://www.instagram.com/tolik_bayda/"><i class="fab fa-instagram fa-2x"></i></a>
       </div>
     </section>
-    <section class="about-me">
+    <section class="about-me" id="second-section">
       <!--Feature photo-->
       <div class="photo"></div>
       <!--Feature photo-->
@@ -64,10 +62,71 @@
         </div>
       </div>
     </section>
+    <section class="section-education">
+      <div class="education">
+        <div class="wrapper">
+          <h1 class="styledH1">education</h1>
+          <div class="cursor">
+            <h1>CURSOR Education</h1>
+            <p>Front-End Developer • October 2018 — January 2019 </p>
+          </div>
+        </div>
+        <div><img src="images/сertificate.jpg" alt="certificate" class="certificate"></div>
+      </div>
+    </section>
+    <section class='section-skills'>
+      <div class="skills">
+        <h1 class="">skills</h1>
+        <div>
+          <h3>HTML - 84%</h3>
+          <div class="progresBar">
+            <div class="progress skillbar-bar" data-percent="84%"></div>
+          </div>
+          <h3>CSS - 79%</h3>
+          <div class="progresBar">
+            <div class="progress" data-percent="79%"></div>
+          </div>
+          <h3>JavaScript - 65%</h3>
+          <div class="progresBar">
+            <div class="progress" data-percent="65%"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="additional">
+      <h1>Have knowledge of: </h1>
+      <div class="additional-skills">
+        <p>OOD, Gulp.js, React.js, Bootstrap, Materialize, SASS, Flexbox, Git, Webpack, AJAX, JSON, Node.js, Express.js</p>
+      </div>
+    </section>
+    <section class="work">
+      <p>CHECK OUT SOME OF MY WORKS.</p>
+      <div class="work-examples">
+        <div class="react work-example" data-url="https://otikas77.github.io/react-app/#/">
+          <img src="/images/1_3SVfBkNZI2f-sspiq59xcw.png" alt="react">
+        </div>
+        <div class="upqode work-example" data-url="https://otikas77.github.io/upqode/">
+          <img src="/images/upqode.jpg" alt="upqode">
+        </div>
+        <div class="envato work-example" data-url="https://otikas77.github.io/envato/">
+          <img src="/images/envato.jpg" alt="envato">
+        </div>
+      </div>
+    </section>
+    <footer>
+      <button type="button" name="button" class="toTop"><p>&gt;</p></button>
+      <div class="icons-footer">
+        <a href="https://github.com/otikas77"><i class="fab fa-github fa-2x"></i></a>
+        <a href="https://www.linkedin.com/in/anatoliy-bayda-051190174/"><i class="fab fa-linkedin fa-2x"></i></a>
+        <a href="https://www.facebook.com/profile.php?id=100010775678196&ref=bookmarks"><i class="fab fa-facebook-f fa-2x"></i></a>
+        <a href="https://www.instagram.com/tolik_bayda/"><i class="fab fa-instagram fa-2x"></i></a>
+      </div>
+    </footer>
   </main>
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script type="text/javascript" src="js/script.js"></script>
 </body>
 </html>

@@ -4,10 +4,6 @@ body {
   margin: 0;
   padding: 0; }
 
-body {
-  height: 5000px;
-  background-color: red; }
-
 header {
   background-color: #333333;
   position: fixed;
@@ -23,11 +19,13 @@ header {
     header nav button {
       display: none; }
   header a {
-    text-decoration: none;
+    cursor: pointer;
     color: white;
     margin-right: 3%;
     text-transform: uppercase;
     font-size: 16px; }
+    header a:hover {
+      text-decoration: none; }
 
 .drop-menu {
   background-color: white;
@@ -96,6 +94,115 @@ main {
         width: 100%; }
         .about-me .information .contact .resume button {
           width: 200px; }
+
+.section-education {
+  margin-top: 40px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column; }
+
+.education {
+  display: flex;
+  flex-direction: column; }
+
+.wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: center; }
+
+.styledH1 {
+  min-width: 220px;
+  height: 50px;
+  text-transform: uppercase;
+  margin-right: 5%;
+  border-bottom: 2px solid green; }
+
+.skills {
+  margin-top: 50px;
+  display: flex;
+  justify-content: center; }
+  .skills h1 {
+    height: 60px;
+    line-height: 60px;
+    text-transform: uppercase;
+    margin-right: 5%;
+    border-bottom: 2px solid #11ABB0;
+    width: 200px; }
+
+.progresBar {
+  width: 35vw;
+  height: 20px;
+  line-height: 20px;
+  border: 2px solid #C391FF;
+  box-sizing: border-box; }
+
+.certificate {
+  width: 99vw; }
+
+.additional {
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; }
+  .additional h1 {
+    display: inline;
+    height: 55px; }
+
+.work {
+  margin-top: 50px;
+  padding-bottom: 50px;
+  padding-top: 50px;
+  background-color: #EBEEEE;
+  justify-content: center; }
+
+.work-examples {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin: 0 auto; }
+  .work-examples div {
+    border: 2px solid grey;
+    margin: 20px; }
+    .work-examples div:hover {
+      border: 2px solid #414AFF;
+      cursor: pointer; }
+
+.work-examples div img {
+  width: 391px;
+  height: 321px; }
+
+footer {
+  background-color: #0F0F0F; }
+  footer button {
+    width: 70px;
+    height: 70px;
+    background-color: #525252;
+    border-radius: 50%;
+    position: relative;
+    z-index: 1;
+    bottom: 35px;
+    border: none;
+    color: white;
+    font-size: 50px;
+    transform: rotate(-90deg); }
+    footer button:active {
+      outline: none !important; }
+    footer button:focus {
+      outline: none !important; }
+    footer button p {
+      position: relative;
+      bottom: 8px; }
+
+.progress {
+  width: 0%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  background-color: #0AFF37;
+  border-radius: 0;
+  transition: 2s linear;
+  transition-property: width; }
 
 @media screen and (max-width: 992px) {
   .my-name {
@@ -185,3 +292,58 @@ header .drop-menu ul {
 @media screen and (max-width: 425px) {
   .resume button {
     width: 100vw !important; } }
+
+@media screen and (max-width: 768px) {
+  .wrapper {
+    flex-direction: column; } }
+
+@media screen and (max-width: 768px) {
+  .styledH1 {
+    margin: 0 auto;
+    width: 200px;
+    height: 40px;
+    font-size: 30px; } }
+
+@media screen and (max-width: 768px) {
+  .cursor h1 {
+    font-size: 30px; } }
+
+@media screen and (max-width: 768px) {
+  .skills {
+    flex-direction: column;
+    justify-content: center; } }
+
+@media screen and (max-width: 768px) {
+  .skills h1 {
+    font-size: 30px;
+    height: 50px;
+    display: inline-block;
+    margin: 0 auto;
+    margin-bottom: 20px; } }
+
+@media screen and (max-width: 768px) {
+  .progresBar {
+    margin: 0 auto;
+    width: 90vw; } }
+
+@media screen and (max-width: 768px) {
+  .additional h1 {
+    font-size: 30px; } }
+
+@media screen and (max-width: 768px) {
+  .additional-skills {
+    box-sizing: border-box;
+    margin-left: 10px;
+    margin-right: 10px; } }
+
+@media screen and (max-width: 401px) {
+  .work-examples div {
+    width: 98vw;
+    height: 84.6547314578vw;
+    box-sizing: border-box; } }
+
+@media screen and (max-width: 401px) {
+  .work-examples div img {
+    box-sizing: border-box;
+    width: 98vw;
+    height: 84.6547314578vw; } }
