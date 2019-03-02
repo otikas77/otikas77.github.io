@@ -18,6 +18,8 @@ header {
     width: 100vw; }
     header nav button {
       display: none; }
+      header nav button:focus {
+        outline: none; }
   header a {
     cursor: pointer;
     color: white;
@@ -33,6 +35,9 @@ header {
   height: 200px;
   position: relative;
   display: none; }
+
+.drop-menu-active {
+  display: block; }
 
 main {
   padding-top: 50px;
@@ -87,13 +92,17 @@ main {
       margin-bottom: 50px; }
       .about-me .information .contact .details {
         width: 20%; }
-      .about-me .information .contact .resume {
+      .about-me .information .contact .download_resume {
         display: flex;
         align-items: center;
         justify-content: center;
         width: 100%; }
-        .about-me .information .contact .resume button {
+        .about-me .information .contact .download_resume button {
           width: 200px; }
+          .about-me .information .contact .download_resume button a {
+            color: white; }
+            .about-me .information .contact .download_resume button a:hover {
+              text-decoration: none; }
 
 .section-education {
   margin-top: 40px;
@@ -133,11 +142,8 @@ main {
   width: 35vw;
   height: 20px;
   line-height: 20px;
-  border: 2px solid #C391FF;
+  border: 2px solid #242424;
   box-sizing: border-box; }
-
-.certificate {
-  width: 99vw; }
 
 .additional {
   margin-top: 50px;
@@ -174,35 +180,32 @@ main {
 
 footer {
   background-color: #0F0F0F; }
-  footer button {
-    width: 70px;
-    height: 70px;
-    background-color: #525252;
-    border-radius: 50%;
-    position: relative;
-    z-index: 1;
-    bottom: 35px;
-    border: none;
-    color: white;
-    font-size: 50px;
-    transform: rotate(-90deg); }
-    footer button:active {
-      outline: none !important; }
-    footer button:focus {
-      outline: none !important; }
-    footer button p {
-      position: relative;
-      bottom: 8px; }
+
+.toTop {
+  position: relative;
+  bottom: 35px;
+  box-sizing: border-box;
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  cursor: pointer; }
+  .toTop:hover {
+    border: 3px solid black; }
 
 .progress {
   width: 0%;
   height: 100%;
   margin: 0;
   padding: 0;
-  background-color: #0AFF37;
+  background-color: #7D7D7D;
   border-radius: 0;
   transition: 2s linear;
   transition-property: width; }
+
+.icons-footer {
+  position: relative;
+  bottom: 50px;
+  height: 60px; }
 
 @media screen and (max-width: 992px) {
   .my-name {
@@ -290,7 +293,7 @@ header .drop-menu ul {
     width: 100vw !important; } }
 
 @media screen and (max-width: 425px) {
-  .resume button {
+  .download_resume button {
     width: 100vw !important; } }
 
 @media screen and (max-width: 768px) {
@@ -303,6 +306,10 @@ header .drop-menu ul {
     width: 200px;
     height: 40px;
     font-size: 30px; } }
+
+@media screen and (max-width: 995px) {
+  .certificate {
+    width: 99vw; } }
 
 @media screen and (max-width: 768px) {
   .cursor h1 {
@@ -347,3 +354,15 @@ header .drop-menu ul {
     box-sizing: border-box;
     width: 98vw;
     height: 84.6547314578vw; } }
+
+@media screen and (max-width: 375px) {
+  .toTop {
+    width: 60px;
+    height: 60px;
+    bottom: 30px; } }
+
+@media screen and (max-width: 320px) {
+  .toTop {
+    width: 50px;
+    height: 50px;
+    bottom: 25px; } }
