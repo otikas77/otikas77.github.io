@@ -1,0 +1,18 @@
+body{
+	width: 100vw;
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+button{
+	height: 50px;
+	width: 50px;
+	padding: 0px;
+	margin:0px;
+}
+.facebook{
+	width: 20%;
+	height: 20%;
+	opacity: 0;
+}
