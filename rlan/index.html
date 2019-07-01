@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Document</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" href="./slick/slick.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.4.0/dist/leaflet.css" integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA==" crossorigin=""/>
+  <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+  <section class="popup_tariff">
+      <div class="popup">
+        <div class="close-popup">
+          <i class="fas fa-times close-popup-btn fa-2x"></i>
+        </div>
+        <div class="popup_field">
+          <h2>Повний спектр послуг</h2>
+          <p>Заповніть особисті дані і отримайте свій тарифний план</p>
+          <form>
+            <div class="form_wrapper">
+              <p>Ім'я</p>
+              <input type="text" name="firstname">
+            </div>
+            <div class="form_wrapper">
+              <p>Прізвище</p>
+              <input type="text" name="lastname">
+            </div>
+            <div class="form_wrapper">
+              <p>Телефон</p>
+              <input type="text" name="namber">
+            </div>
+            <div class="form_wrapper">
+              <p>Адреса</p>
+              <input type="text" name="adress">
+            </div>
+            <input type="submit" value="Надіслати">
+          </form>
+        </div>
+      </div>
+  </section>
+<header>
+  <div class="header_top">
+    <div class="container-fluid">
+      <div class="row header__top">
+          <span>
+            <i class="fas fa-map-marker-alt"></i>
+            <a href="https://goo.gl/maps/6Buho2xZMK72">Рудно, вул.В.Великого 1а (2-й поверх)</a>
+          </span>
+          <span>
+            <i class="fas fa-phone"></i>
+            <a href="tel:+380673406929">(067) 3406929</a>
+          </span>
+          <span>
+            <i class="far fa-envelope"></i>
+            <a href="mailto:info@rlan.com.ua">info@rlan.com.ua</a>
+          </span>
+      </div>
+    </div>
+  </div>
+  <div class="header__bottom header_scroled_disabled">
+    <div class="conteiner-fluid">
+      <div class="row">
+        <div class="col-4 col-lg-4 col-md-4 col-sm-4 logo">
+          <a href="./index.html"><img src="./images/logo.png" alt="logo"></a>
+        </div>
+        <div class="burger col-8 d-block d-lg-none">
+          <div class="burger_style">
+            <div class="close-burger_top"></div>
+            <div class="close-burger_middle"></div>
+            <div class="close-burger_bottom"></div>
+          </div>
+        </div>
+        <div class="col-12 col-lg-8">
+          <nav class="main-nav">
+            <ul>
+              <li>
+                <a href="#" class="menu__item">інтернет</a>
+                <ul class="sub-menu sub-menu--header">
+                  <li><a href="./tariff.html">інтернет</a></li>
+                  <li><a href="./tariff.html">інтернет</a></li>
+                </ul>
+              </li>
+              <li>
+                <a href="#" class="menu__item">телебачення</a>
+                <ul class="sub-menu sub-menu--header">
+                  <li><a href="./television.html">телебачення</a></li>
+                  <li><a href="./television.html">телебачення</a></li>
+                </ul>
+              </li>
+              <li>
+                <a href="#" class="menu__item">новини</a>
+                <ul class="sub-menu sub-menu--header">
+                  <li><a href="./news.html">новини</a></li>
+                  <li><a href="./news.html">новини</a></li>
+                </ul>
+              </li>
+              <li>
+                <a href="#" class="menu__item">для клієнтів</a>
+                <ul class="sub-menu sub-menu--header">
+                  <li><a href="./for-clients.html">для клієнтів</a></li>
+                  <li><a href="./for-clients.html">для клієнтів</a></li>
+                </ul>
+              </li>
+              <li>
+                <a href="#" class="menu__item">контакти</a>
+                <ul class="sub-menu sub-menu--header">
+                  <li><a href="./contacts.html">контакти</a></li>
+                  <li><a href="./contacts.html">контакти</a></li>
+                </ul>
+              </li>
+              <li>
+                <a href="#" class="menu__item">особистий кабінет</a>
+                <ul class="sub-menu sub-menu--header">
+                  <li><a href="./office.html">особистий кабінет</a></li>
+                  <li><a href="./office.html">особистий кабінет</a></li>
+                </ul>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+                                                                                    <!--INTRO SECTION-->
+<section class="intro">
+  <div class="intro_carusel_item" style="background-image: url(./images/intro-bg.png)">
+    <div class="container-fluid">
+      <div class="row intro_row">
+        <div class="col-12">
+          <h2>
+            швидкий та стабільний <strong>інтернет</strong>
+          </h2>
+        </div>
+        <div class="col-12 intro__wrapper">
+          <div class="col-9"></div>
+          <div class="col-lg-3 col-12  intro__right__text">
+            <strong>160 Телеканалів</strong>
+            <span>У відмінній якості</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="intro_carusel_item" style="background-image: url(./images/intro-bg.png)">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-12">
+          <h2>
+            швидкий та стабільний <strong>інтернет</strong>
+          </h2>
+        </div>
+        <div class="col-12 intro__wrapper">
+          <div class="col-9"></div>
+          <div class="col-12  intro__right__text">
+            <strong>160 Телеканалів</strong>
+            <span>У відмінній якості</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="intro_carusel_item" style="background-image: url(./images/intro-bg.png)">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-12">
+          <h2>
+            швидкий та стабільний <strong>інтернет</strong>
+          </h2>
+        </div>
+        <div class="col-12 intro__wrapper">
+          <div class="col-9"></div>
+          <div class="col-lg-3 col-12  intro__right__text">
+            <strong>160 Телеканалів</strong>
+            <span>У відмінній якості</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+                                                                    <!--OUR SERVICES SECTION-->
+<section class="our__services">
+  <div class="container-fluid">
+    <div class="row our__services__wrapper">
+        <h2>наші послуги</h2>
+        <div class="news__wrapper">
+          <!--IF YOU WANT ADD NEW ONE NEWS POST COPPY THIS TEXT-->
+            <div class="services__news">
+              <div class="img" style="background-image: url(./images/first_news.png)"></div>
+              <div class="text">
+                <h3>Інтернет</h3>
+                <p>Ввічливі оператори дадуть відповіді на ваші питання, а відповідальні фахівці швидко і акуратно підключать Інтернет у зручний для Вас час</p>
+                <p>Ввічливі оператори дадуть відповіді на ваші питання, а відповідальні фахівці швидко і акуратно підключать Інтернет у зручний для Вас час</p>
+                <div class="button__wrapper">
+                  <a href="#" class="btn btn-primary">Обрати тариф</a>
+                </div>
+              </div>
+            </div>
+            <!---->
+            <div class="services__news">
+              <div class="img" style="background-image: url(./images/second_news.png)"></div>
+              <div class="text">
+                <h3>Телебачення</h3>
+                <strong>rlan tv</strong>
+                <p>Компанія Rlan спільно з ТОВ "Телетранс" пропонує своїм абонентам якісне телебачення в цифровій якостію Для перегляду доступні понад 170 ліцензійних ТВ-каналів.</p>
+                <p>Перегляд каналів телебачення можливий на телевізорах SMART (Samsung, LG, інші)б комп'ютерах з встановленою програмою перегляду (VLC, IP-TV Player), медіаприставках (з підтримкою IPTV)</p>
+                <div class="button__wrapper">
+                  <a href="#" class="btn btn-primary">Переглянути канали</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+    </div>
+</section>
+                                                                <!--CHOSE YOUR TARIFF SECTION-->
+<section class="chose_your_tariff" style="background-image: url(./images/chouseTarif.png)">
+  <div class="container-fluid">
+    <div class="row chose_your_tariff_wrapper">
+      <div class="col-12 tariff_text">
+        <h2>оберіть свій тариф</h2>
+      </div>
+      <div class="carusel">
+<!--ID YOU WANT ADD ONE NEW CARUSEL ITEM COPY THIS CODE-->
+        <div class="carusel__item">
+          <img src="./images/carusel-item-2.png" alt="carusel-item">
+          <div class="price">
+            <p><strong>130</strong> грн./міс.</p>
+          </div>
+          <div class="tariff__plan">
+            <p>Тарифний план: <strong>ЕКО</strong></p>
+            <p>Швидкість: <strong>25 Мбіт/с</strong></p>
+          </div>
+          <a href="#" class="btn btn-primary carusel-btn">Купити</a>
+        </div>
+<!---->
+        <div class="carusel__item">
+          <img src="./images/carusel-item-1.png" alt="carusel-item">
+          <div class="price">
+            <p><strong>160</strong> грн./міс.</p>
+          </div>
+          <div class="tariff__plan">
+            <p>Тарифний план: <strong>FAST</strong></p>
+            <p>Швидкість: <strong>60 Мбіт/с</strong></p>
+          </div>
+          <a href="#" class="btn btn-primary carusel-btn">Купити</a>
+        </div>
+        <div class="carusel__item">
+          <img src="./images/carusel-item-3.png" alt="carusel-item">
+          <div class="price">
+            <p><strong>190</strong> грн./міс.</p>
+          </div>
+          <div class="tariff__plan">
+            <p>Тарифний план: <strong>ULTRA</strong></p>
+            <p>Швидкість: <strong>60 Мбіт/с</strong></p>
+          </div>
+          <a href="#" class="btn btn-primary carusel-btn">Купити</a>
+        </div>
+        <div class="carusel__item">
+          <img src="./images/carusel-item-1.png" alt="carusel-item">
+          <div class="price">
+            <p><strong>160</strong> грн./міс.</p>
+          </div>
+          <div class="tariff__plan">
+            <p>Тарифний план: <strong>Fast</strong></p>
+            <p>Швидкість: <strong>60 Мбіт/с</strong></p>
+          </div>
+          <a href="#" class="btn btn-primary carusel-btn">Купити</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+                                                                      <!--NEWS SECTION-->
+<section class="news">
+  <div class="news_text_wrapper">
+    <h2>новини</h2>
+  </div>
+  <div class="news_carusel">
+    <!--IF YOU WANT ADD ONE NEW NEWS POST COPY THIS TEXT-->
+    <div class="news_caruse_item">
+      <div class="parent">
+        <a href="./big-news-post.html" class="child" style="background-image: url(./images/news-img-1.png)"></a>
+      </div>
+      <h5>Виграйте 18 місяців інтернету в Новому Році</h5>
+      <div class="news_text">
+        <p>Друзі,</p>
+        <p>до нового 2018 року залишилися лічені дні!</p>
+        <p>Багато хто з вас проведуть цей час у приготуваннях до торжества та інших ...</p>
+      </div>
+      <div class="news_date"><small>19.07.2017</small></div>
+    </div>
+    <!---->
+    <div class="news_caruse_item">
+      <div class="parent">
+        <a href="./big-news-post.html" class="child" style="background-image: url(./images/news-img-2.png)"></a>
+      </div>
+      <h5>Виграйте 18 місяців інтернету в Новому Році</h5>
+      <div class="news_text">
+        <p>Новий Телеком – інтернет-провайдер в Києво-Святошинському районі Київської області, в покритті більше 20 сіл, проводимо інтернет, телебачення в приватні будинки та квартири, підключаємо відеоспостереження, обслуговуємо мережі...</p>
+      </div>
+      <div class="news_date"><small>19.07.2017</small></div>
+    </div>
+    <div class="news_caruse_item">
+      <div class="parent">
+        <a href="./big-news-post.html" class="child" style="background-image: url(./images/news-img-1.png)"></a>
+      </div>
+      <h5>Виграйте 18 місяців інтернету в Новому Році</h5>
+      <div class="news_text">
+        <p>Друзі,</p>
+        <p>до нового 2018 року залишилися лічені дні!</p>
+        <p>Багато хто з вас проведуть цей час у приготуваннях до торжества та інших ...</p>
+      </div>
+      <div class="news_date"><small>19.07.2017</small></div>
+    </div>
+  </div>
+</section>
+
+<section class="question">
+  <h2>поширені запитання</h2>
+  <div class="container">
+    <div class="row">
+      <div class="menu col-lg-10 col-sm-12">
+        <!--IF YOU WANT ADD NEW ONE QUЕSTION COPY THIS CODE -->
+        <div class="drop_block">
+          <div class="block-title">
+            <h4>Як підключитися?</h4>
+          </div>
+          <div class="block_description">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae debitis temporibus dicta numquam ullam dolorem illo! Earum qui beatae voluptas, dolorem quasi quaerat facere et sed quod maxime corrupti mollitia quidem animi debitis! Amet aliquid corporis quas dolor odit, velit cumque, facilis consequatur dolorum, hic magni officiis necessitatibus itaque ipsam.</p>
+          </div>
+        </div>
+        <!---->
+        <div class="drop_block">
+          <div class="block-title">
+            <h4>За якою технологією відбувається підключення?</h4>
+          </div>
+          <div class="block_description">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae debitis temporibus dicta numquam ullam dolorem illo! Earum qui beatae voluptas, dolorem quasi quaerat facere et sed quod maxime corrupti mollitia quidem animi debitis! Amet aliquid corporis quas dolor odit, velit cumque, facilis consequatur dolorum, hic magni officiis necessitatibus itaque ipsam.</p>
+          </div>
+        </div>
+        <div class="drop_block">
+          <div class="block-title">
+            <h4>Як потрапити в Особистий кабінет?</h4>
+          </div>
+          <div class="block_description">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae debitis temporibus dicta numquam ullam dolorem illo! Earum qui beatae voluptas, dolorem quasi quaerat facere et sed quod maxime corrupti mollitia quidem animi debitis! Amet aliquid corporis quas dolor odit, velit cumque, facilis consequatur dolorum, hic magni officiis necessitatibus itaque ipsam.</p>
+          </div>
+        </div>
+        <div class="drop_block">
+          <div class="block-title">
+            <h4>Як змінити тарифний план?</h4>
+          </div>
+          <div class="block_description">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae debitis temporibus dicta numquam ullam dolorem illo! Earum qui beatae voluptas, dolorem quasi quaerat facere et sed quod maxime corrupti mollitia quidem animi debitis! Amet aliquid corporis quas dolor odit, velit cumque, facilis consequatur dolorum, hic magni officiis necessitatibus itaque ipsam.</p>
+          </div>
+        </div>
+        <div class="drop_block">
+          <div class="block-title">
+            <h4> Що таке додаткова послуга «ІР адреса» і як нею скористатися?</h4>
+          </div>
+          <div class="block_description">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae debitis temporibus dicta numquam ullam dolorem illo! Earum qui beatae voluptas, dolorem quasi quaerat facere et sed quod maxime corrupti mollitia quidem animi debitis! Amet aliquid corporis quas dolor odit, velit cumque, facilis consequatur dolorum, hic magni officiis necessitatibus itaque ipsam.</p>
+          </div>
+        </div>
+        <div class="drop_block">
+          <div class="block-title">
+            <h4>Налаштування PPPoE для роутера TP-Link: покрокова інструкція</h4>
+          </div>
+          <div class="block_description">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae debitis temporibus dicta numquam ullam dolorem illo! Earum qui beatae voluptas, dolorem quasi quaerat facere et sed quod maxime corrupti mollitia quidem animi debitis! Amet aliquid corporis quas dolor odit, velit cumque, facilis consequatur dolorum, hic magni officiis necessitatibus itaque ipsam.</p>
+          </div>
+        </div>
+        <div class="drop_block">
+          <div class="block-title">
+            <h4>Додаткові послуги</h4>
+          </div>
+          <div class="block_description">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae debitis temporibus dicta numquam ullam dolorem illo! Earum qui beatae voluptas, dolorem quasi quaerat facere et sed quod maxime corrupti mollitia quidem animi debitis! Amet aliquid corporis quas dolor odit, velit cumque, facilis consequatur dolorum, hic magni officiis necessitatibus itaque ipsam.</p>
+          </div>
+        </div>
+        </div>
+      </div>
+    </div>
+</section>
+
+<footer>
+  <div class="contacts_and_map">
+    <div class="footer_wrapper">
+      <div class="contacts">
+        <h5>контакти</h5>
+        <ul>
+          <li>
+            <i class="fas fa-phone"></i>
+            <a href="tel:+380673406929">(067) 3406929</a>
+          </li>
+          <li>
+            <i class="fas fa-map-marker-alt"></i>
+            <a href="https://goo.gl/maps/6Buho2xZMK72">Рудно, вул.В.Великого 1а (2-й поверх)</a>
+          </li>
+          <li>
+            <i class="far fa-envelope"></i>
+            <a href="mailto:info@rlan.com.ua">info@rlan.com.ua</a>
+          </li>
+          <li>
+            <i class="fab fa-viber"></i>
+            <a href="viber://chat?number=+380673406929">(067) 3406929</a>
+          </li>
+        </ul>
+      </div>
+      <div class="map-wrapper" id="mapid">
+      </div>
+  </div>
+    <div class="coppyright"> &#169; COPYRIGHT 2018 . ВСІ ПРАВА ЗАХИЩЕНО</div>
+  </div>
+</footer>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  <script type="text/javascript" src="https://unpkg.com/default-passive-events"></script>
+  <script src="https://unpkg.com/leaflet@1.4.0/dist/leaflet.js"
+  integrity="sha512-QVftwZFqvtRNi0ZyCtsznlKSWOStnDORoefr1enyq5mVL4tmKB3S/EnC3rRJcxCPavG10IcrVGSmPh6Qw5lwrg=="
+  crossorigin=""></script>
+  <script src="./slick/slick.js"></script>
+  <script src="./js/script.js"></script>
+</body>
+</html>

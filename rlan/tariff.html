@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Document</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" href="./slick/slick.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.4.0/dist/leaflet.css"
+    integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
+    crossorigin=""/>
+  <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+  <section class="popup_tariff">
+      <div class="popup">
+        <div class="close-popup">
+          <i class="fas fa-times close-popup-btn fa-2x"></i>
+        </div>
+        <div class="popup_field">
+          <h2>Повний спектр послуг</h2>
+          <p>Заповніть особисті дані і отримайте свій тарифний план</p>
+          <form>
+            <div class="form_wrapper">
+              <p>Ім'я</p>
+              <input type="text" name="firstname">
+            </div>
+            <div class="form_wrapper">
+              <p>Прізвище</p>
+              <input type="text" name="lastname">
+            </div>
+            <div class="form_wrapper">
+              <p>Телефон</p>
+              <input type="text" name="namber">
+            </div>
+            <div class="form_wrapper">
+              <p>Адреса</p>
+              <input type="text" name="adress">
+            </div>
+            <input type="submit" value="Надіслати">
+            <div class="fade_out_inputs">
+              <input class="input_price" type="text" value="Надіслати">
+              <input class="input_speed" type="text" value="Надіслати">
+            </div>
+          </form>
+        </div>
+      </div>
+  </section>
+<header>
+  <div class="header_top">
+    <div class="container-fluid">
+      <div class="row header__top">
+          <span>
+            <i class="fas fa-map-marker-alt"></i>
+            <a href="https://goo.gl/maps/6Buho2xZMK72">Рудно, вул.В.Великого 1а (2-й поверх)</a>
+          </span>
+          <span>
+            <i class="fas fa-phone"></i>
+            <a href="tel:+380673406929">(067) 3406929</a>
+          </span>
+          <span>
+            <i class="far fa-envelope"></i>
+            <a href="mailto:info@rlan.com.ua">info@rlan.com.ua</a>
+          </span>
+      </div>
+    </div>
+  </div>
+  <div class="header__bottom header_scroled_disabled">
+    <div class="conteiner-fluid">
+      <div class="row">
+        <div class="col-4 col-lg-4 col-md-4 col-sm-4 logo">
+          <a href="./index.html"><img src="./images/logo.png" alt="logo"></a>
+        </div>
+        <div class="burger col-8 d-block d-lg-none">
+          <div class="burger_style">
+            <div class="close-burger_top"></div>
+            <div class="close-burger_middle"></div>
+            <div class="close-burger_bottom"></div>
+          </div>
+        </div>
+        <div class="col-12 col-lg-8">
+          <nav class="main-nav">
+            <ul>
+              <li>
+                <a href="#" class="menu__item">інтернет</a>
+                <ul class="sub-menu sub-menu--header">
+                  <li><a href="./tariff.html">інтернет</a></li>
+                  <li><a href="./tariff.html">інтернет</a></li>
+                </ul>
+              </li>
+              <li>
+                <a href="#" class="menu__item">телебачення</a>
+                <ul class="sub-menu sub-menu--header">
+                  <li><a href="./television.html">телебачення</a></li>
+                  <li><a href="./television.html">телебачення</a></li>
+                </ul>
+              </li>
+              <li>
+                <a href="#" class="menu__item">новини</a>
+                <ul class="sub-menu sub-menu--header">
+                  <li><a href="./news.html">новини</a></li>
+                  <li><a href="./news.html">новини</a></li>
+                </ul>
+              </li>
+              <li>
+                <a href="#" class="menu__item">для клієнтів</a>
+                <ul class="sub-menu sub-menu--header">
+                  <li><a href="./for-clients.html">для клієнтів</a></li>
+                  <li><a href="./for-clients.html">для клієнтів</a></li>
+                </ul>
+              </li>
+              <li>
+                <a href="#" class="menu__item">контакти</a>
+                <ul class="sub-menu sub-menu--header">
+                  <li><a href="./contacts.html">контакти</a></li>
+                  <li><a href="./contacts.html">контакти</a></li>
+                </ul>
+              </li>
+              <li>
+                <a href="#" class="menu__item">особистий кабінет</a>
+                <ul class="sub-menu sub-menu--header">
+                  <li><a href="./office.html">особистий кабінет</a></li>
+                  <li><a href="./office.html">особистий кабінет</a></li>
+                </ul>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+                                                                        <!--INTRO SECTION-->
+<section class="small_intro" style="background-image: url(./images/intro.png)">
+</section>
+                                                                    <!--NAVIGATION SECTION-->
+<section class="nav">
+  <ul class="breadcrumb">
+    <li><a href="./index.html">Головна</a></li>
+    <li>інтернет</li>
+  </ul>
+</section>
+                                                                  <!--CHOSE YOUR RESIDENTAL SECTION-->
+<section class="chose_your_residential">
+  <h2>оберіть свій житловий комплекс</h2>
+  <div class="residental_drop_down_wrapper">
+    <div class="residental">
+      <!--IF YOU WANT ADD ONE NEW MENU POINT COPY THIS CODE-->
+      <div class="residental_drop_down">
+        <div class="das">
+          <ul>
+            <li>
+              <a href="#">Рудно</a>
+              <div class="drop_down_residental_menu">
+                <p class="private"><a href="#" data-eco-price="1" data-eco-speed="1" data-fast-price="1" data-fast-speed="1" data-ultra-price="1" data-ultra-speed='1'>Для приватного сектору</a></p>
+                <p class="multi-storey"><a href="#" data-eco-price="2" data-eco-speed="2" data-fast-price="2" data-fast-speed="2" data-ultra-price="2" data-ultra-speed='2'>Для багатоповерхівок</a></p>
+              </div>
+            </li>
+          </ul>
+        </div>
+
+      </div>
+      <!---->
+      <!--IF YOU WANT ADD ONE NEW MENU POINT COPY THIS CODE-->
+      <div class="residental_drop_down">
+        <div class="das">
+          <ul>
+            <li>
+              <a href="#">Зимно Вода</a>
+              <div class="drop_down_residental_menu">
+                <p class="private"><a href="#" data-eco-price="3" data-eco-speed="3" data-fast-price="3" data-fast-speed="3" data-ultra-price="3" data-ultra-speed='3'>Для приватного сектору</a></p>
+                <p class="multi-storey"><a href="#" data-eco-price="4" data-eco-speed="4" data-fast-price="4" data-fast-speed="4" data-ultra-price="4" data-ultra-speed='4'>Для багатоповерхівок</a></p>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <!---->
+      <!--IF YOU WANT ADD ONE NEW MENU POINT COPY THIS CODE-->
+      <div class="residental_drop_down">
+        <div class="das">
+          <ul>
+            <li>
+              <a href="a">Суховоля</a>
+              <div class="drop_down_residental_menu">
+                <p class="private"><a href="#" data-eco-price="5" data-eco-speed="5" data-fast-price="5" data-fast-speed="5" data-ultra-price="5" data-ultra-speed='5'>Для приватного сектору</a></p>
+                <p class="multi-storey"><a href="#" data-eco-price="6" data-eco-speed="6" data-fast-price="6" data-fast-speed="6" data-ultra-price="6" data-ultra-speed='6'>Для багатоповерхівок</a></p>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <!---->
+      <!--IF YOU WANT ADD ONE NEW MENU POINT COPY THIS CODE-->
+      <div class="residental_drop_down">
+        <div class="das">
+          <ul>
+            <li>
+              <a href="#">Лапаївка</a>
+              <div class="drop_down_residental_menu">
+                <p class="private"><a href="#" data-eco-price="7" data-eco-speed="7" data-fast-price="7" data-fast-speed="7" data-ultra-price="7" data-ultra-speed='7'>Для приватного сектору</a></p>
+                <p class="multi-storey"><a href="#" data-eco-price="8" data-eco-speed="8" data-fast-price="8" data-fast-speed="8" data-ultra-price="8" data-ultra-speed='8'>Для багатоповерхівок</a></p>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <!---->
+      <!--IF YOU WANT ADD ONE NEW MENU POINT COPY THIS CODE-->
+      <div class="residental_drop_down">
+        <div class="das">
+          <ul>
+            <li>
+              <a href="#">Паланка</a>
+              <div class="drop_down_residental_menu">
+                <p class="private"><a href="#" data-eco-price="9" data-eco-speed="9" data-fast-price="9" data-fast-speed="9" data-ultra-price="9" data-ultra-speed='9'>Для приватного сектору</a></p>
+                <p class="multi-storey"><a href="#" data-eco-price="10" data-eco-speed="10" data-fast-price="10" data-fast-speed="10" data-ultra-price="10" data-ultra-speed='10'>Для багатоповерхівок</a></p>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <!---->
+    </div>
+  </div>
+</section>
+                                                                <!--CHOSE YOUR TARIFF SECTION-->
+<section class="chose_your_tariff">
+  <div class="container-fluid">
+    <div class="row chose_your_tariff_wrapper">
+      <div class="col-12 tariff_text chose_h2">
+        <h2>оберіть свій тариф</h2>
+      </div>
+      <div class="carusel carusel--tarif-page">
+<!--ID YOU WANT ADD ONE NEW CARUSEL ITEM COPY THIS CODE-->
+        <div class="carusel__item">
+          <img src="./images/carusel-item-2.png" alt="carusel-item">
+          <div class="price eco_price">
+            <p><strong>130</strong> грн./міс.</p>
+          </div>
+          <div class="tariff__plan eco_speed">
+            <p>Тарифний план: <strong>ЕКО</strong></p>
+            <p>Швидкість: <strong>25 Мбіт/с</strong></p>
+          </div>
+          <a href="#" class="btn btn-primary carusel-btn">Купити</a>
+        </div>
+<!---->
+        <div class="carusel__item">
+          <img src="./images/carusel-item-1.png" alt="carusel-item">
+          <div class="price fast_price">
+            <p><strong>160</strong> грн./міс.</p>
+          </div>
+          <div class="tariff__plan fast_speed">
+            <p>Тарифний план: <strong>FAST</strong></p>
+            <p>Швидкість: <strong>60 Мбіт/с</strong></p>
+          </div>
+          <a href="#" class="btn btn-primary carusel-btn">Купити</a>
+        </div>
+        <div class="carusel__item">
+          <img src="./images/carusel-item-3.png" alt="carusel-item">
+          <div class="price ultra_price">
+            <p><strong>190</strong> грн./міс.</p>
+          </div>
+          <div class="tariff__plan ultra_speed">
+            <p>Тарифний план: <strong>ULTRA</strong></p>
+            <p>Швидкість: <strong>60 Мбіт/с</strong></p>
+          </div>
+          <a href="#" class="btn btn-primary carusel-btn">Купити</a>
+        </div>
+        <div class="carusel__item">
+          <img src="./images/carusel-item-1.png" alt="carusel-item">
+          <div class="price fast_price">
+            <p><strong>160</strong> грн./міс.</p>
+          </div>
+          <div class="tariff__plan fast_speed">
+            <p>Тарифний план: <strong>Fast</strong></p>
+            <p>Швидкість: <strong>60 Мбіт/с</strong></p>
+          </div>
+          <a href="#" class="btn btn-primary carusel-btn">Купити</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="contacts_and_map">
+    <div class="footer_wrapper">
+      <div class="contacts">
+        <h5>контакти</h5>
+        <ul>
+          <li>
+            <i class="fas fa-phone"></i>
+            <a href="tel:+380673406929">(067) 3406929</a>
+          </li>
+          <li>
+            <i class="fas fa-map-marker-alt"></i>
+            <a href="https://goo.gl/maps/6Buho2xZMK72">Рудно, вул.В.Великого 1а (2-й поверх)</a>
+          </li>
+          <li>
+            <i class="far fa-envelope"></i>
+            <a href="mailto:info@rlan.com.ua">info@rlan.com.ua</a>
+          </li>
+          <li>
+            <i class="fab fa-viber"></i>
+            <a href="viber://chat?number=+380673406929">(067) 3406929</a>
+          </li>
+        </ul>
+      </div>
+      <div class="map-wrapper" id="mapid">
+      </div>
+  </div>
+    <div class="coppyright"> &#169; COPYRIGHT 2018 . ВСІ ПРАВА ЗАХИЩЕНО</div>
+  </div>
+</footer>
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  <script src="https://unpkg.com/leaflet@1.4.0/dist/leaflet.js"
+  integrity="sha512-QVftwZFqvtRNi0ZyCtsznlKSWOStnDORoefr1enyq5mVL4tmKB3S/EnC3rRJcxCPavG10IcrVGSmPh6Qw5lwrg=="
+  crossorigin=""></script>
+  <script src="./slick/slick.js"></script>
+  <script src="./js/script.js"></script>
+</body>
+</html>

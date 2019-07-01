@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Document</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" href="./slick/slick.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.4.0/dist/leaflet.css"
+    integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
+    crossorigin=""/>
+  <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+<header>
+  <div class="header_top">
+    <div class="container-fluid">
+      <div class="row header__top">
+          <span>
+            <i class="fas fa-map-marker-alt"></i>
+            <a href="https://goo.gl/maps/6Buho2xZMK72">Рудно, вул.В.Великого 1а (2-й поверх)</a>
+          </span>
+          <span>
+            <i class="fas fa-phone"></i>
+            <a href="tel:+380673406929">(067) 3406929</a>
+          </span>
+          <span>
+            <i class="far fa-envelope"></i>
+            <a href="mailto:info@rlan.com.ua">info@rlan.com.ua</a>
+          </span>
+      </div>
+    </div>
+  </div>
+  <div class="header__bottom header_scroled_disabled">
+    <div class="conteiner-fluid">
+      <div class="row">
+        <div class="col-4 col-lg-4 col-md-4 col-sm-4 logo">
+          <a href="./index.html"><img src="./images/logo.png" alt="logo"></a>
+        </div>
+        <div class="burger col-8 d-block d-lg-none">
+          <div class="burger_style">
+            <div class="close-burger_top"></div>
+            <div class="close-burger_middle"></div>
+            <div class="close-burger_bottom"></div>
+          </div>
+        </div>
+        <div class="col-12 col-lg-8">
+          <nav class="main-nav">
+            <ul>
+              <li>
+                <a href="#" class="menu__item">інтернет</a>
+                <ul class="sub-menu sub-menu--header">
+                  <li><a href="./tariff.html">інтернет</a></li>
+                  <li><a href="./tariff.html">інтернет</a></li>
+                </ul>
+              </li>
+              <li>
+                <a href="#" class="menu__item">телебачення</a>
+                <ul class="sub-menu sub-menu--header">
+                  <li><a href="./television.html">телебачення</a></li>
+                  <li><a href="./television.html">телебачення</a></li>
+                </ul>
+              </li>
+              <li>
+                <a href="#" class="menu__item">новини</a>
+                <ul class="sub-menu sub-menu--header">
+                  <li><a href="./news.html">новини</a></li>
+                  <li><a href="./news.html">новини</a></li>
+                </ul>
+              </li>
+              <li>
+                <a href="#" class="menu__item">для клієнтів</a>
+                <ul class="sub-menu sub-menu--header">
+                  <li><a href="./for-clients.html">для клієнтів</a></li>
+                  <li><a href="./for-clients.html">для клієнтів</a></li>
+                </ul>
+              </li>
+              <li>
+                <a href="#" class="menu__item">контакти</a>
+                <ul class="sub-menu sub-menu--header">
+                  <li><a href="./contacts.html">контакти</a></li>
+                  <li><a href="./contacts.html">контакти</a></li>
+                </ul>
+              </li>
+              <li>
+                <a href="#" class="menu__item">особистий кабінет</a>
+                <ul class="sub-menu sub-menu--header">
+                  <li><a href="./office.html">особистий кабінет</a></li>
+                  <li><a href="./office.html">особистий кабінет</a></li>
+                </ul>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+                                                                        <!--INTRO SECTION-->
+<div class="main" style="background-image: url(./images/office-bg.png)">
+  <div class="office_field">
+    <h3>кабінет користувача</h3>
+    <div class="office_form_wrapper">
+      <form>
+        <div>
+          <p>Користувач</p>
+          <input type="text" name="login">
+        </div>
+        <div>
+          <p>Пароль</p>
+          <input type="text" name="password">
+        </div>
+        <div class="main_btn">
+          <input type="submit" value="Увійти">
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
+
+<footer>
+    <div class="coppyright"> &#169; COPYRIGHT 2018 . ВСІ ПРАВА ЗАХИЩЕНО</div>
+</footer>
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  <script src="https://unpkg.com/leaflet@1.4.0/dist/leaflet.js"
+  integrity="sha512-QVftwZFqvtRNi0ZyCtsznlKSWOStnDORoefr1enyq5mVL4tmKB3S/EnC3rRJcxCPavG10IcrVGSmPh6Qw5lwrg=="
+  crossorigin=""></script>
+  <script src="./slick/slick.js"></script>
+  <script src="./js/script.js"></script>
+</body>
+</html>
