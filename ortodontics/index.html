@@ -1,0 +1,567 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="assets/css/vendors/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.4.0/dist/leaflet.css" integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA==" crossorigin="" />
+    <link rel="stylesheet" href="assets/css/style.min.css">
+    <title>Home</title>
+</head>
+
+<body>
+    <header>
+        <div class="header__left-side">
+            <a href="https://goo.gl/maps/sQAy238J5KrwQkTF8">М. Ужгород , вул., Новака 24.</a>
+        </div>
+
+        <a href="#" class="header__logo"><img src="./assets/img/logo.png" alt="logo"> </a>
+
+
+        <div class="header__right-side">
+            <p>Vib/тел:</p>
+            <a href="viber://chat?number=0509257291">050-9257291, </a>
+            <a href="tel:+380954510505">095-451-05-05</a>
+        </div>
+
+    </header>
+    <section class="slider">
+
+        <div class="popup">
+            <div class="popup__text-wrapper">
+                <div class="popup__close">
+                    <i class="fas fa-times fa-2x"></i>
+                </div>
+                <div class="popup__text">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="main first-slide" style="background-image: url(./assets/img/background.png)">
+            <div id=scene_6 style="background-color: #1E2329">
+                <div data-depth="0.1" class="main--paralax" style="background-image: url(./assets/img/background.png)"></div>
+            </div>
+            <div class="main__wrapper">
+                <div class="main__left-side">
+                    <div class="text__wrapper">
+                        <div class="main__text">
+                            <h2>Інформація</h2>
+                            <p>Для клієнтів</p>
+                        </div>
+                    </div>
+
+                    <div class="main-arrow">
+                        <div class="main-arrow__item main-arrow__left" data-arrow="prev">
+                            <div class="arrow-styled">
+                                <a href="#"><i class="fas fa-chevron-left"></i></a>
+                            </div>
+                            <p>Контакти</p>
+                        </div>
+                        <div class="main-arrow__item main-arrow__right" data-arrow="next">
+                            <p>Головна</p>
+                            <div class="arrow-styled">
+                                <a href="#"><i class="fas fa-chevron-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="first-slide__right-side">
+                    <div class="first-slide__carusel">
+                        <div class="first-slide__item">
+                            <h6>Причини порушення прикусу і викривлення зубів</h6>
+                            <div class="line-wrapper">
+                                <div class="line--grey"></div>
+                                <div class="line--pink"></div>
+                                <div class="line--grey"></div>
+                            </div>
+                            <div class="content__wrapper">
+                                <ul>
+                                    <li>Зменшення розміру щелеп в кожного наступного покоління в наслідок інволюції людини</li>
+                                    <li>Порушення носового дихання</li>
+                                    <li>Звичка тримати рот відкритим</li>
+                                </ul>
+                                <a href="#">Дізнатися більше</a>
+                            </div>
+
+                        </div>
+                        <div class="first-slide__item">
+                            <h6>Порушення росту обличчя та щелеп</h6>
+                            <div class="line-wrapper">
+                                <div class="line--grey"></div>
+                                <div class="line--pink"></div>
+                                <div class="line--grey"></div>
+                            </div>
+                            <div class="content__wrapper">
+                                <ul>
+                                    <li>Криві молочні та постійні зуби</li>
+                                    <li>Порушення прорізування і недолік місця для зубів</li>
+                                    <li>Видно ясна при посмішці</li>
+                                </ul>
+                                <a href="#">Дізнатися більше</a>
+                            </div>
+
+                        </div>
+                        <div class="first-slide__item">
+                            <h6>Причини порушення прикусу і викривлення зубів</h6>
+                            <div class="line-wrapper">
+                                <div class="line--grey"></div>
+                                <div class="line--pink"></div>
+                                <div class="line--grey"></div>
+                            </div>
+                            <div class="content__wrapper">
+                                <ul>
+                                    <li>Зменшення розміру щелеп в кожного наступного покоління в наслідок інволюції людини</li>
+                                    <li>Порушення носового дихання</li>
+                                    <li>Звичка тримати рот відкритим</li>
+                                </ul>
+                                <a href="#">Дізнатися більше</a>
+                            </div>
+
+                        </div>
+                        <div class="first-slide__item">
+                            <h6>Порушення росту обличчя та щелеп</h6>
+                            <div class="line-wrapper">
+                                <div class="line--grey"></div>
+                                <div class="line--pink"></div>
+                                <div class="line--grey"></div>
+                            </div>
+                            <div class="content__wrapper">
+                                <ul>
+                                    <li>Криві молочні та постійні зуби</li>
+                                    <li>Порушення прорізування і недолік місця для зубів</li>
+                                    <li>Видно ясна при посмішці</li>
+                                </ul>
+                                <a href="#">Дізнатися більше</a>
+                            </div>
+
+                        </div>
+                        <div class="first-slide__item">
+                            <h6>Порушення росту обличчя та щелеп</h6>
+                            <div class="line-wrapper">
+                                <div class="line--grey"></div>
+                                <div class="line--pink"></div>
+                                <div class="line--grey"></div>
+                            </div>
+                            <div class="content__wrapper">
+                                <ul>
+                                    <li>Криві молочні та постійні зуби</li>
+                                    <li>Порушення прорізування і недолік місця для зубів</li>
+                                    <li>Видно ясна при посмішці</li>
+                                </ul>
+                                <a href="#">Дізнатися більше</a>
+                            </div>
+
+                        </div>
+                        <div class="first-slide__item">
+                            <h6>Порушення росту обличчя та щелеп</h6>
+                            <div class="line-wrapper">
+                                <div class="line--grey"></div>
+                                <div class="line--pink"></div>
+                                <div class="line--grey"></div>
+                            </div>
+                            <div class="content__wrapper">
+                                <ul>
+                                    <li>Криві молочні та постійні зуби</li>
+                                    <li>Порушення прорізування і недолік місця для зубів</li>
+                                    <li>Видно ясна при посмішці</li>
+                                </ul>
+                                <a href="#">Дізнатися більше</a>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="firs-slider__arrows galary__arrows--styled">
+                        <div class="firs-slider__prev-arrow">
+                            <a href="#">
+                                <i class="fas fa-angle-left"></i>
+                            </a>
+                        </div>
+                        <div class="firs-slider__dots">
+                        </div>
+                        <div class="slick-next firs-slider__next-arrow">
+                            <a href="#">
+                                <i class="fas fa-angle-right"></i>
+                            </a>
+                        </div>
+                    </div>
+
+
+                </div>
+
+            </div>
+        </div>
+
+
+
+        <div class="main" style="background-image: url(./assets/img/background.png)">
+            <div id=scene style="background-color: #1E2329">
+                <div data-depth="0.1" class="main--paralax" style="background-image: url(./assets/img/background.png)"></div>
+            </div>
+            <div class="main__wrapper">
+                <div class="main__left-side">
+                    <div class="text__wrapper">
+                        <div class="main__text">
+                            <h2>orthodontics</h2>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
+                        </div>
+                        <div class="btn-wrapper">
+                            <div class="main__btn">
+                                <a href="#">Онлайн консультація</a>
+                            </div>
+                            <div class="main__btn">
+                                <a href="#">Зареєструватися онлайн</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="main-arrow">
+                        <div class="main-arrow__item main-arrow__left" data-arrow="prev">
+                            <div class="arrow-styled">
+                                <a href="#"><i class="fas fa-chevron-left"></i></a>
+                            </div>
+                            <p>Інформація для пацієнтів</p>
+                        </div>
+                        <div class="main-arrow__item main-arrow__right" data-arrow="next">
+                            <p>Про нас</p>
+                            <div class="arrow-styled">
+                                <a href="#"><i class="fas fa-chevron-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="main__right-side">
+                    <img src="./assets/img/main-photo.png" alt="main-photo">
+                </div>
+
+            </div>
+        </div>
+
+
+
+        <div class="main" style="background-image: url(./assets/img/background2.png)">
+            <div id=scene_2 style="background-color: #1E2329">
+                <div data-depth="0.1" class="main--paralax" style="background-image: url(./assets/img/background2.png)"></div>
+            </div>
+            <div class="main__wrapper">
+                <div class="main__left-side">
+                    <div class="text__wrapper">
+                        <div class="main__text">
+                            <h2>Про нас</h2>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
+                        </div>
+                    </div>
+
+                    <div class="main-arrow">
+                        <div class="main-arrow__item main-arrow__left" data-arrow="prev">
+                            <div class="arrow-styled">
+                                <a href="#"><i class="fas fa-chevron-left"></i></a>
+                            </div>
+                            <p>Головна</p>
+                        </div>
+                        <div class="main-arrow__item main-arrow__right" data-arrow="next">
+                            <p>Галерея</p>
+                            <div class="arrow-styled">
+                                <a href="#"><i class="fas fa-chevron-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="second-slide__right-side">
+                    <div class="big-img">
+                        <img src="./assets/img/second-slide__big-img.png" alt="big-img">
+                        <div class="white-bg"></div>
+                    </div>
+                    <div class="small-img">
+                        <img src="./assets/img/second-slide__small-img.png" alt="small-img">
+                        <img src="./assets/img/second-slide__small-img2.png" alt="small-img">
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+
+        <div class="main" style="background-image: url(./assets/img/background3.png)">
+            <div id=scene_3 style="background-color: #1E2329">
+                <div data-depth="0.1" class="main--paralax" style="background-image: url(./assets/img/background3.png)"></div>
+            </div>
+            <div class="main__wrapper">
+                <div class="main__left-side">
+                    <div class="text__wrapper">
+                        <div class="main__text">
+                            <h2>Галерея</h2>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
+                        </div>
+                    </div>
+
+                    <div class="main-arrow">
+                        <div class="main-arrow__item main-arrow__left" data-arrow="prev">
+                            <div class="arrow-styled">
+                                <a href="#"><i class="fas fa-chevron-left"></i></a>
+                            </div>
+                            <p>Про нас</p>
+                        </div>
+                        <div class="main-arrow__item main-arrow__right" data-arrow="next">
+                            <p>Контакти</p>
+                            <div class="arrow-styled">
+                                <a href="#"><i class="fas fa-chevron-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="third-slide__galary">
+                    <div class="galary">
+                        <div class="galary__item">
+                            <a href="#"><img src="assets/img/galary_1.png" alt="galary__item"></a>
+                        </div>
+                        <div class="galary__item">
+                            <a href="#"><img src="assets/img/galary_2.png" alt="galary__item"></a>
+                        </div>
+                        <div class="galary__item">
+                            <a href="#"><img src="assets/img/galary_1.png" alt="galary__item"></a>
+                        </div>
+                        <div class="galary__item">
+                            <a href="#"><img src="assets/img/galary_2.png" alt="galary__item"></a>
+                        </div>
+                        <div class="galary__item">
+                            <a href="#"><img src="assets/img/galary_1.png" alt="galary__item"></a>
+                        </div>
+                        <div class="galary__item">
+                            <a href="#"><img src="assets/img/galary_2.png" alt="galary__item"></a>
+                        </div>
+                        <div class="galary__item">
+                            <a href="#"><img src="assets/img/galary_1.png" alt="galary__item"></a>
+                        </div>
+                        <div class="galary__item">
+                            <a href="#"><img src="assets/img/galary_2.png" alt="galary__item"></a>
+                        </div>
+                        <div class="galary__item">
+                            <a href="#"><img src="assets/img/galary_1.png" alt="galary__item"></a>
+                        </div>
+                        <div class="galary__item">
+                            <a href="#"><img src="assets/img/galary_2.png" alt="galary__item"></a>
+                        </div>
+                        <div class="galary__item">
+                            <a href="#"><img src="assets/img/galary_1.png" alt="galary__item"></a>
+                        </div>
+                        <div class="galary__item">
+                            <a href="#"><img src="assets/img/galary_2.png" alt="galary__item"></a>
+                        </div>
+                        <div class="galary__item">
+                            <a href="#"><img src="assets/img/galary_1.png" alt="galary__item"></a>
+                        </div>
+                        <div class="galary__item">
+                            <a href="#"><img src="assets/img/galary_2.png" alt="galary__item"></a>
+                        </div>
+                        <div class="galary__item">
+                            <a href="#"><img src="assets/img/galary_1.png" alt="galary__item"></a>
+                        </div>
+                        <div class="galary__item">
+                            <a href="#"><img src="assets/img/galary_2.png" alt="galary__item"></a>
+                        </div>
+                        <div class="galary__item">
+                            <a href="#"><img src="assets/img/galary_1.png" alt="galary__item"></a>
+                        </div>
+                        <div class="galary__item">
+                            <a href="#"><img src="assets/img/galary_2.png" alt="galary__item"></a>
+                        </div>
+                    </div>
+
+                    <div class="galary__arrows galary__arrows--styled">
+                        <div class="prev-arrow">
+                            <a href="#">
+                                <i class="fas fa-angle-left"></i>
+                            </a>
+                        </div>
+                        <div class="galary__dots">
+                        </div>
+                        <div class="slick-next next-arrow">
+                            <a href="#">
+                                <i class="fas fa-angle-right"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+
+
+
+        <div class="main" style="background-image: url(./assets/img/background3.png)">
+            <div id=scene_4 style="background-color: #1E2329">
+                <div data-depth="0.1" class="main--paralax" style="background-image: url(./assets/img/background3.png)"></div>
+            </div>
+            <div class="main__wrapper main__wrapper--fourth-slide">
+                <div class="main__left-side">
+                    <div class="text__wrapper">
+                        <div class="main__text">
+                            <h2>Контакти</h2>
+                        </div>
+                    </div>
+
+                    <div class="contacts">
+                        <div class="telepfone">
+                            <div class="icon">
+                                <i class="fas fa-phone fa-2x"></i>
+                            </div>
+                            <div>
+                                <p>Vib/тел:</p>
+                                <a href="viber://chat?number=0509257291">0-50-9257291</a>
+                                <a href="tel:+380954510505">095-451-05-05.</a>
+                            </div>
+                        </div>
+                        <div class="map-link">
+                            <i class="fas fa-map-marker-alt fa-2x"></i>
+                            <div><a href="https://goo.gl/maps/sQAy238J5KrwQkTF8">М. Ужгород , вул., Новака 24.</a></div>
+                        </div>
+
+                    </div>
+
+
+                    <div class="main-arrow">
+                        <div class="main-arrow__item main-arrow__left" data-arrow="prev">
+                            <div class="arrow-styled">
+                                <a href="#"><i class="fas fa-chevron-left"></i></a>
+                            </div>
+                            <p>Галерея</p>
+                        </div>
+                        <div class="main-arrow__item main-arrow__right" data-arrow="next">
+                            <p>Консультація</p>
+                            <div class="arrow-styled">
+                                <a href="#"><i class="fas fa-chevron-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="map">
+                    <div id="map"></div>
+                    <div class="white-bg map--white-bg"></div>
+                </div>
+
+            </div>
+        </div>
+
+
+        <div class="main fifth-slide" style="background-image: url(./assets/img/background3.png)">
+            <div id=scene_5 style="background-color: #1E2329">
+                <div data-depth="0.1" class="main--paralax" style="background-image: url(./assets/img/background3.png)"></div>
+            </div>
+            <div class="main__wrapper main__wrapper--fourth-slide">
+                <div class="main__left-side">
+                    <div class="text__wrapper">
+                        <div class="main__text">
+                            <h2>Консультація онлайн</h2>
+                        </div>
+                    </div>
+
+                    <div class="contacts">
+                        <div class="telepfone telepfone--inline">
+                            <div class="icon">
+                                <i class="fas fa-phone fa-2x"></i>
+                            </div>
+                            <div class="telepfone-wrapper">
+                                <p>Vib/тел:</p>
+                                <a href="viber://chat?number=0509257291">0-50-9257291</a>
+                                <a href="tel:+380954510505">095-451-05-05.</a>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="main-arrow">
+                        <div class="main-arrow__item main-arrow__left" data-arrow="prev">
+                            <div class="arrow-styled">
+                                <a href="#"><i class="fas fa-chevron-left"></i></a>
+                            </div>
+                            <p>Контакти</p>
+                        </div>
+                        <div class="main-arrow__item main-arrow__right" data-arrow="next">
+                            <p>Інформація для клієнтів</p>
+                            <div class="arrow-styled">
+                                <a href="#"><i class="fas fa-chevron-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="fifth-slide__right-side">
+                    <h4>Заповніть особисті дані, щоб отримати консультацію</h4>
+                    <div class="line-wrapper">
+                        <div class="line--grey"></div>
+                        <div class="line--pink"></div>
+                        <div class="line--grey"></div>
+                    </div>
+                    <form>
+                        <div class="name-lastname">
+                            <div class="name">
+                                <p>Ім'я:</p>
+                                <input type="text">
+                            </div>
+                            <div class="lastname">
+                                <p>Прізвище:</p>
+                                <input type="text">
+                            </div>
+                        </div>
+                        <div class="email-phone">
+                            <div class="email">
+                                <p>E-mail:</p>
+                                <input type="email">
+                            </div>
+                            <div class="phone">
+                                <p>Номер телефону</p>
+                                <input type="tel">
+                            </div>
+                        </div>
+                        <div class="your-mind">
+                            <p>Ваше повідомлення</p>
+                            <input type="text">
+                        </div>
+                        <div class="fifth-slide__btn-wrapper">
+                            <input type="submit" value="Відправити">
+                        </div>
+                    </form>
+                </div>
+
+            </div>
+        </div>
+
+    </section>
+    <footer>
+        <div class="footer__wrapper">
+            2019 All rights reserved
+        </div>
+    </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/parallax/3.1.0/parallax.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+    <script src="https://unpkg.com/leaflet@1.4.0/dist/leaflet.js" integrity="sha512-QVftwZFqvtRNi0ZyCtsznlKSWOStnDORoefr1enyq5mVL4tmKB3S/EnC3rRJcxCPavG10IcrVGSmPh6Qw5lwrg==" crossorigin=""></script>
+    <script type="text/javascript" src="./assets/js/script.min.js"></script>
+</body>
+
+</html>
